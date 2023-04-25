@@ -49,9 +49,9 @@ jobs:
     - name: SonarScanner for .NET 5
       uses: highbyte/sonarscan-dotnet@2.0
       with:
-        sonarProjectKey: aci-rental_backend-image-service
+        sonarProjectKey: fhict-student_backend-image-service
         sonarProjectName:  backend-image-service
-        sonarOrganization: aci-rental
+        sonarOrganization: fhict-student
         dotnetBuildArguments: ./ImageService
         dotnetTestArguments: ./ImageService.Tests
 

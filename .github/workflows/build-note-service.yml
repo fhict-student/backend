@@ -16,6 +16,7 @@ on:
       - "NoteService/**"
       - "NoteService.Tests/**"
       - ".github/workflows/build-note-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'NoteService/NoteService.csproj'

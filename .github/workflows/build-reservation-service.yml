@@ -16,6 +16,7 @@ on:
       - "ReservationService/**"
       - "ReservationService.Tests/**"
       - ".github/workflows/build-reservation-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'ReservationService/ReservationService.csproj'

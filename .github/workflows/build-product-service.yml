@@ -16,6 +16,7 @@ on:
       - "ProductService/**"
       - "ProductService.Tests/**"
       - ".github/workflows/build-product-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'ProductService/ProductService.csproj'

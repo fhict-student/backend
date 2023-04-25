@@ -16,6 +16,7 @@ on:
       - "ImageService/**"
       - "ImageService.Tests/**"
       - ".github/workflows/build-image-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'ImageService/ImageService.csproj'

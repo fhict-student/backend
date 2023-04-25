@@ -7,6 +7,8 @@ on:
     paths:
       - "ReservationService/**"
       - ".github/workflows/release-reservation-service.yml"
+  workflow_dispatch:
+  
 env:
   PROJECT_PATH: 'ReservationService/ReservationService.csproj'
 

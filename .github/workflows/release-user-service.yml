@@ -7,6 +7,8 @@ on:
     paths:
       - "UserService/**"
       - ".github/workflows/release-user-service.yml"
+  workflow_dispatch:
+  
 env:
   PROJECT_PATH: 'UserService/UserService.csproj'
 

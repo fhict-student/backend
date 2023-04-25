@@ -16,6 +16,7 @@ on:
       - "UserService/**"
       - "UserService.Tests/**"
       - ".github/workflows/build-user-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'UserService/UserService.csproj'

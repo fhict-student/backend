@@ -7,6 +7,8 @@ on:
     paths:
       - "OcelotAPIGateway/**"
       - ".github/workflows/release-api-gateway.yml"
+  workflow_dispatch:
+  
 env:
   PROJECT_PATH: 'OcelotAPIGateway/OcelotAPIGateway.csproj'
 

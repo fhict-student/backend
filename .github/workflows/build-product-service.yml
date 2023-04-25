@@ -16,6 +16,7 @@ on:
       - "ProductService/**"
       - "ProductService.Tests/**"
       - ".github/workflows/build-product-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'ProductService/ProductService.csproj'
@@ -48,8 +49,8 @@ jobs:
     - name: SonarScanner for .NET 5
       uses: highbyte/sonarscan-dotnet@2.0
       with:
-        sonarProjectKey: aci-rental_backend-product-service
+        sonarProjectKey: fhict-student_backend-product-service
         sonarProjectName:  backend-product-service
-        sonarOrganization: aci-rental
+        sonarOrganization: fhict-student
         dotnetBuildArguments: ./ProductService
         dotnetTestArguments: ./ProductService.Tests

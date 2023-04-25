@@ -16,6 +16,7 @@ on:
       - "NoteService/**"
       - "NoteService.Tests/**"
       - ".github/workflows/build-note-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'NoteService/NoteService.csproj'
@@ -48,8 +49,8 @@ jobs:
     - name: SonarScanner for .NET 5
       uses: highbyte/sonarscan-dotnet@2.0
       with:
-        sonarProjectKey: aci-rental_backend-note-service
+        sonarProjectKey: fhict-student_backend-note-service
         sonarProjectName:  backend-note-service
-        sonarOrganization: aci-rental
+        sonarOrganization: fhict-student
         dotnetBuildArguments: ./NoteService
         dotnetTestArguments: ./NoteService.Tests

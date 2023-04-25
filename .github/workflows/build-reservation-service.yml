@@ -16,6 +16,7 @@ on:
       - "ReservationService/**"
       - "ReservationService.Tests/**"
       - ".github/workflows/build-reservation-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'ReservationService/ReservationService.csproj'
@@ -48,8 +49,8 @@ jobs:
     - name: SonarScanner for .NET 5
       uses: highbyte/sonarscan-dotnet@2.0
       with:
-        sonarProjectKey: aci-rental_backend-reservation-service
+        sonarProjectKey: fhict-student_backend-reservation-service
         sonarProjectName:  backend-reservation-service
-        sonarOrganization: aci-rental
+        sonarOrganization: fhict-student
         dotnetBuildArguments: ./NoteService
         dotnetTestArguments: ./NoteService.Tests

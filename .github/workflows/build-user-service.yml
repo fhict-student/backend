@@ -16,6 +16,7 @@ on:
       - "UserService/**"
       - "UserService.Tests/**"
       - ".github/workflows/build-user-service.yml"
+  workflow_dispatch:
 
 env:
   PROJECT_PATH: 'UserService/UserService.csproj'
@@ -48,8 +49,8 @@ jobs:
     - name: SonarScanner for .NET 5
       uses: highbyte/sonarscan-dotnet@2.0
       with:
-        sonarProjectKey: aci-rental_backend-user-service
+        sonarProjectKey: fhict-student_backend-user-service
         sonarProjectName:  backend-user-service
-        sonarOrganization: aci-rental
+        sonarOrganization: fhict-student
         dotnetBuildArguments: ./UserService
         dotnetTestArguments: ./UserService.Tests
